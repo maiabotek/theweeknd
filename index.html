@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> The Weeknd </title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="styles/style.css" rel="stylesheet">
+  </head>
+
+<body>
+
+<header>
+  <div class=header-text>
+    <h1>The Weeknd</h1>
+    <p id=byline> by Maia Botek </p>
+  </div>
+</header>
+
+
+  <article>
+
+    <div class="container">
+       <div class="row">
+
+    <div class="col-sm-8 m-auto">
+     <div id=bio>
+      <p> With four Grammys, billions of streams and countless awards, Abel Tesfaye has skyrocketed to success over the course of his 10+ year career.</p>
+
+      <p>Better known as The Weeknd, the artist and producer has amassed fans for his music that taps into genres from R&amp;B to funk and pop, exploring themes like heartbreak, love and addiction.</p>
+     </div>
+
+      <p class="d-flex justify-content-center text-center" id=chartIntro>Click the buttons to view each album’s top five streamed songs on Spotify, and a sample of its most popular song.</p>
+    </div>
+
+
+    <div class="col-xl-12 mb-2 m-auto p-0 justify-content-center text-center">
+    <button type="button" class="btn btn-light m-1" id=kiss>Kiss Land (2013)</button>
+    <button type="button" class="btn btn-light m-1" id=beauty>Beauty Behind the Madness (2015)</button>
+    <button type="button" class="btn btn-light m-1" id=starboy>Starboy (2016)</button>
+    <button type="button" class="btn btn-light m-1" id=melancholy>My Dear Melancholy, (2018)</button>
+    <button type="button" class="btn btn-light m-1" id=after>After Hours (2020)</button>
+    <button type="button" class="btn btn-light m-1" id=dawn>Dawn FM (2022)</button>
+  </div>
+
+  <div class=information id=infoOne>
+    <figure class="highcharts-figure">
+        <div id=chartone></div>
+    </figure>
+    <audio controls preload="auto">
+        <source src="audio/livefor.mp3" type="audio/mp3">
+        <source src="audio/livefor.ogg" type="audio/ogg">
+     </audio>
+ </div>
+
+ <div class=information id=infotwo>
+   <figure class="highcharts-figure">
+       <div id=charttwo></div>
+   </figure>
+   <audio controls preload="auto">
+       <source src="audio/thehills.mp3" type="audio/mp3">
+       <source src="audio/thehills.ogg" type="audio/ogg">
+    </audio>
+</div>
+
+<div class=information id=infothree>
+  <figure class="highcharts-figure">
+      <div id=chartthree></div>
+  </figure>
+  <audio controls preload="auto">
+      <source src="audio/starboy.mp3" type="audio/mp3">
+      <source src="audio/starboy.ogg" type="audio/ogg">
+   </audio>
+</div>
+
+<div class=information id=infofour>
+  <figure class="highcharts-figure">
+      <div id=chartfour></div>
+  </figure>
+  <audio controls preload="auto">
+      <source src="audio/callout.mp3" type="audio/mp3">
+      <source src="audio/callout.ogg" type="audio/ogg">
+   </audio>
+</div>
+
+<div class=information id=infofive>
+  <figure class="highcharts-figure">
+      <div id=chartfive></div>
+  </figure>
+  <audio controls preload="auto">
+      <source src="audio/blindinglights.mp3" type="audio/mp3">
+      <source src="audio/blindinglights.ogg" type="audio/ogg">
+   </audio>
+</div>
+
+<div class=information id=infosix>
+  <figure class="highcharts-figure">
+      <div id=chartsix></div>
+  </figure>
+  <audio controls preload="auto">
+      <source src="audio/sacrifice.mp3" type="audio/mp3">
+      <source src="audio/sacrifice.ogg" type="audio/ogg">
+   </audio>
+</div>
+
+
+<div class="col-sm-8 m-auto">
+  <div class="mt-4 mb-1 text-center p-0">
+      <h3>Which Weeknd Album Should You Listen To?</h3>
+    </div>
+
+      <div class="mb-3" id=quizIntro>
+      <p> Select one answer for each of the following questions to see which album might be a good fit for your personality.</p>
+    </div>
+
+      <form id=questions method="get" action=””>
+
+        <div class="mb-3" id=qOne>
+              <label class="form-label">You just discovered a new album. You hope it’s full of:</label>
+
+            <div class="form-check">
+              <label class="form-check-label" for="chartToppers"><input class="form-check-input" type="radio" name="songtype" value="chartToppers" id="chartToppers">chart toppers</label>
+            </div>
+
+            <div class="form-check">
+              <label class="form-check-label" for="gems"><input class="form-check-input" type="radio" name="songtype" value="gems" id="gems">undiscovered gems</label>
+            </div>
+
+            <div class="form-check">
+              <label class="form-check-label" for="mix"><input class="form-check-input" type="radio" name="songtype" value="mix" id="mix">a mix of both</label>
+            </div>
+        </div>
+
+    <div class="mb-3" id=qTwo>
+          <label class="form-label"> It's a Friday night. What are you doing? </label>
+
+        <div class="form-check">
+          <label class="form-check-label" for="crying"><input class="form-check-input" type="radio" name="friday" value="crying" id="crying">Crying about an ex</label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label" for="downtown"><input class="form-check-input" type="radio" name="friday" value="downtown" id="downtown">Going downtown</label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label" for="movies"><input class="form-check-input" type="radio" name="friday" value="movies" id="movies">Watching the newest blockbuster movie</label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label" for="party"><input class="form-check-input" type="radio" name="friday" value="party" id="party">Finding a house party</label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label" for="hanging"><input class="form-check-input" type="radio" name="friday" value="hanging" id="hanging">Hanging out with friends</label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label" for="alone"><input class="form-check-input" type="radio" name="friday" value="alone" id="alone">Spending some alone time at home</label>
+        </div>
+    </div>
+
+    <div class="mb-3" id=qThree>
+          <label class="form-label">How would you describe yourself?</label>
+
+        <div class="form-check">
+          <label class="form-check-label" for="chill"><input class="form-check-input" type="radio" name="describe" value="chill" id="chill">Chill</label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label" for="upbeat"><input class="form-check-input" type="radio" name="describe" value="upbeat" id="upbeat">Upbeat</label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label" for="adventurous"><input class="form-check-input" type="radio" name="describe" value="adventurous" id="adventurous">Adventurous</label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label" for="romantic"><input class="form-check-input" type="radio" name="describe" value="romantic" id="romantic">Romantic</label>
+        </div>
+    </div>
+
+    <div class="mb-3" id=qFour>
+          <label class="form-label">The best genre of music is clearly:</label>
+
+        <div class="form-check">
+          <label class="form-check-label" for="80s"><input class="form-check-input" type="radio" name="genre" value="80s" id="80s">70s/80s Hits</label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label" for="pop"><input class="form-check-input" type="radio" name="genre" value="pop" id="pop">Pop</label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label" for="rb"><input class="form-check-input" type="radio" name="genre" value="rb" id="rb">R&amp;B/Hip-Hop</label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label" for="dark"><input class="form-check-input" type="radio" name="genre" value="dark" id="dark">Dark Wave</label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label" for="indie"><input class="form-check-input" type="radio" name="genre" value="indie" id="indie">Indie/Alternative</label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label" for="electronic"><input class="form-check-input" type="radio" name="genre" value="electronic" id="electronic">Electronic/Techno</label>
+        </div>
+    </div>
+
+    <div class="mb-3" id=qFive>
+          <label class="form-label">When are you listening to this album?</label>
+
+        <div class="form-check">
+          <label class="form-check-label" for="commuting"><input class="form-check-input" type="radio" name="when" value="commuting" id="commuting">Commuting to and from work/school</label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label" for="relaxing"><input class="form-check-input" type="radio" name="when" value="relaxing" id="relaxing">Relaxing before bed</label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label" for="workout"><input class="form-check-input" type="radio" name="when" value="workout" id="workout">During a workout</label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label" for="dancing"><input class="form-check-input" type="radio" name="when" value="dancing" id="dancing">Dancing my heart out</label>
+        </div>
+    </div>
+
+    <div>
+      <div id=resultOne class=result>
+        <p> Kiss Land </p>
+        <iframe class=albumFrame src="https://open.spotify.com/embed/album/2FgMWuwMeTgJArP2RF3upF?utm_source=generator" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+
+    <div id=resultTwo class=result>
+      <p> Beauty Behind the Madness </p>
+      <iframe class=albumFrame src="https://open.spotify.com/embed/album/0P3oVJBFOv3TDXlYRhGL7s?utm_source=generator" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <div id=resultThree class=result>
+      <p> Starboy </p>
+      <iframe class=albumFrame src="https://open.spotify.com/embed/album/2ODvWsOgouMbaA5xf0RkJe?utm_source=generator" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <div id=resultFour class=result>
+      <p> My Dear Melancholy, </p>
+      <iframe class=albumFrame src="https://open.spotify.com/embed/album/4qZBW3f2Q8y0k1A84d4iAO?utm_source=generator" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <div id=resultFive class=result>
+      <p> After Hours </p>
+      <iframe class=albumFrame src="https://open.spotify.com/embed/album/4yP0hdKOZPNshxUOjY0cZj?utm_source=generator" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <div id=resultSix class=result>
+      <p> Dawn FM </p>
+      <iframe class=albumFrame src="https://open.spotify.com/embed/album/2nLOHgzXzwFEpl62zAgCEC?utm_source=generator" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+  </div>
+
+<div class="d-flex justify-content-center">
+  <button type="button" class="btn btn-primary" id=startbtn> Take Quiz </button>
+</div>
+
+  <button type="button" class="btn btn-primary mb-2" aria-label="submit" id=submitBtn>Submit</button>
+
+  <button type="reset" class="btn btn-light mt-2" aria-label="reset" id=resetBtn>Reset Selections</button>
+
+  </form>
+
+   </div>
+  </div>
+</div>
+
+</article>
+
+<footer>
+<p>This page was created by Maia Botek with resources from <a href=https://www.britannica.com/biography/the-Weeknd> this Britannica</a> article as an assignment for the University of Florida's Web Applications for Communicators course.</p>
+
+<p> Header Image: <a href=https://commons.wikimedia.org/wiki/File:FEQ_July_2018_The_Weeknd_(44108174204).jpg>FEQ July 2018 The Weeknd</a> by Nicolas Padovani (2018). Image licensed under the <a href= https://creativecommons.org/licenses/by/2.0/deed.en>Creative Commons Attribution 2.0 Generic license</a>.</p>
+</footer>
+
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="scripts/finalscript.js"></script>
+
+</body>
+</html>
